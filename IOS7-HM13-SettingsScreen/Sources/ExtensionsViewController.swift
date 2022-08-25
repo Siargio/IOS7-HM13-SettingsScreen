@@ -7,16 +7,26 @@
 
 import UIKit
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return setups?.count ?? 0
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        namesSetup.count
+        return setups?[section].count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = namesSetup[indexPath.row]
-        cell.imageView?.image = UIImage(systemName: images[indexPath.row])
-        //cell.tintColor?.tintColor = UIColor(colors[indexPath.row])
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomViewController", for: indexPath) as? CustomViewController
+        cell?.setup = setups?[indexPath.section][indexPath.row]
+        cell?.accessoryType = .detailDisclosureButton
+        return cell ?? UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let title = setups?[indexPath.section][indexPath.row].name
+        print("Выбрана ячейка \(String(describing: title))")
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+

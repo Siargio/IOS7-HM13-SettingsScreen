@@ -10,11 +10,12 @@ import UIKit
 struct Setups: Hashable {
     var image: UIImage
     var name: String
-    var color: UIColor
+    var color: UIColor = .systemBlue
+    var isToggle: Bool?
 }
 
 extension Setups {
-    static var setup: [[Setups]] = [
+    static var setups: [[Setups]] = [
         [Setups(image: UIImage(systemName: "airplane")!, name: "Авиарежим", color: UIColor.systemYellow)],
         [Setups(image: UIImage(systemName: "wifi")!, name: "Wi-Fi", color: UIColor.systemYellow)],
         [Setups(image: UIImage(systemName: "wifi")!, name: "Bluetooth", color: UIColor.systemYellow)],

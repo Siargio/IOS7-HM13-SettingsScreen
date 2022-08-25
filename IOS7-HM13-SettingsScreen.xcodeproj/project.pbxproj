@@ -16,6 +16,7 @@
 		EC26C52B28B77D0800ED947C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC26C52A28B77D0800ED947C /* SnapKit */; };
 		EC26C53228B78D8000ED947C /* ExtensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */; };
 		EC26C53528B7B4D600ED947C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53428B7B4D600ED947C /* Model.swift */; };
+		EC26C53928B7C27700ED947C /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53828B7C27700ED947C /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EC26C52028B77B6700ED947C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsViewController.swift; sourceTree = "<group>"; };
 		EC26C53428B7B4D600ED947C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EC26C53828B7C27700ED947C /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,8 @@
 				EC26C53328B7AAD300ED947C /* Extensions */,
 				EC26C52E28B77D2B00ED947C /* Storyboards */,
 				EC26C51628B77B6600ED947C /* ViewController.swift */,
+				EC26C53828B7C27700ED947C /* CustomViewController.swift */,
 				EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */,
-				EC26C52C28B77D2700ED947C /* App */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -109,6 +111,7 @@
 		EC26C53028B77D3000ED947C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC26C52C28B77D2700ED947C /* App */,
 				EC26C52F28B77D2D00ED947C /* Configuration */,
 			);
 			path = Resources;
@@ -203,6 +206,7 @@
 				EC26C53528B7B4D600ED947C /* Model.swift in Sources */,
 				EC26C53228B78D8000ED947C /* ExtensionsViewController.swift in Sources */,
 				EC26C51728B77B6600ED947C /* ViewController.swift in Sources */,
+				EC26C53928B7C27700ED947C /* CustomViewController.swift in Sources */,
 				EC26C51328B77B6600ED947C /* AppDelegate.swift in Sources */,
 				EC26C51528B77B6600ED947C /* SceneDelegate.swift in Sources */,
 			);
