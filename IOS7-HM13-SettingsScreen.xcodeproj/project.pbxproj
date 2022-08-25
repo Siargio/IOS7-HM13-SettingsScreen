@@ -14,6 +14,8 @@
 		EC26C51F28B77B6700ED947C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC26C51D28B77B6700ED947C /* LaunchScreen.storyboard */; };
 		EC26C52828B77CF200ED947C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC26C52728B77CF200ED947C /* SnapKit */; };
 		EC26C52B28B77D0800ED947C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC26C52A28B77D0800ED947C /* SnapKit */; };
+		EC26C53228B78D8000ED947C /* ExtensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */; };
+		EC26C53528B7B4D600ED947C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53428B7B4D600ED947C /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EC26C51B28B77B6700ED947C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC26C51E28B77B6700ED947C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC26C52028B77B6700ED947C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsViewController.swift; sourceTree = "<group>"; };
+		EC26C53428B7B4D600ED947C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +80,10 @@
 		EC26C52D28B77D2900ED947C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EC26C53328B7AAD300ED947C /* Extensions */,
 				EC26C52E28B77D2B00ED947C /* Storyboards */,
 				EC26C51628B77B6600ED947C /* ViewController.swift */,
+				EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */,
 				EC26C52C28B77D2700ED947C /* App */,
 			);
 			path = Sources;
@@ -106,6 +112,14 @@
 				EC26C52F28B77D2D00ED947C /* Configuration */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC26C53328B7AAD300ED947C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC26C53428B7B4D600ED947C /* Model.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC26C53528B7B4D600ED947C /* Model.swift in Sources */,
+				EC26C53228B78D8000ED947C /* ExtensionsViewController.swift in Sources */,
 				EC26C51728B77B6600ED947C /* ViewController.swift in Sources */,
 				EC26C51328B77B6600ED947C /* AppDelegate.swift in Sources */,
 				EC26C51528B77B6600ED947C /* SceneDelegate.swift in Sources */,
