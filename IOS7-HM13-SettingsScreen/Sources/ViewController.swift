@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Outlets
+
+
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .red
     }
 
+    // MARK: - Setup
 
 }
 
