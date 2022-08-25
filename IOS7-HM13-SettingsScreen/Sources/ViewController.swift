@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setups = Setups.setups
-        view.backgroundColor = .white
         title = "Настройки"
         setupHierarchy()
         setupLayout()

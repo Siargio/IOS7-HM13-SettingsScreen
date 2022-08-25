@@ -17,6 +17,7 @@
 		EC26C53228B78D8000ED947C /* ExtensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */; };
 		EC26C53528B7B4D600ED947C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53428B7B4D600ED947C /* Model.swift */; };
 		EC26C53928B7C27700ED947C /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53828B7C27700ED947C /* CustomViewController.swift */; };
+		EC26C53B28B82A7000ED947C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53A28B82A7000ED947C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsViewController.swift; sourceTree = "<group>"; };
 		EC26C53428B7B4D600ED947C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EC26C53828B7C27700ED947C /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		EC26C53A28B82A7000ED947C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				EC26C52E28B77D2B00ED947C /* Storyboards */,
 				EC26C51628B77B6600ED947C /* ViewController.swift */,
 				EC26C53828B7C27700ED947C /* CustomViewController.swift */,
+				EC26C53A28B82A7000ED947C /* DetailViewController.swift */,
 				EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */,
 			);
 			path = Sources;
@@ -209,6 +212,7 @@
 				EC26C53928B7C27700ED947C /* CustomViewController.swift in Sources */,
 				EC26C51328B77B6600ED947C /* AppDelegate.swift in Sources */,
 				EC26C51528B77B6600ED947C /* SceneDelegate.swift in Sources */,
+				EC26C53B28B82A7000ED947C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
