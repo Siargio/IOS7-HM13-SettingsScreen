@@ -90,28 +90,4 @@ extension SetupSections {
 //        [Setups(image: UIImage(systemName: "battery.100")!, name: "Аккумулятор", color: UIColor.systemGreen)],
 //        [Setups(image: UIImage(systemName: "hand.raised.fill")!, name: "Конфиденциальность", color: UIColor.systemBlue)]
 //    ]
-//    static var setups: [[Setups]] = [
-//        [Setups(image: UIImage(systemName: "airplane")!, name: "Авиарежим", color: UIColor.systemOrange)],
-//        [Setups(image: UIImage(systemName: "wifi")!, name: "Wi-Fi", color: UIColor.systemBlue)],
-//        [Setups(image: UIImage(systemName: "wifi")!, name: "Bluetooth", color: UIColor.systemBlue)],
-//        [Setups(image: UIImage(systemName: "antenna.radiowaves.left.and.right")!, name: "Сотовая связь", color: UIColor.systemGreen)],
-//        [Setups(image: UIImage(systemName: "personalhotspot")!, name: "Режим модема", color: UIColor.systemGreen)],
-//        [Setups(image: UIImage(systemName: "wifi")!, name: "VPN", color: UIColor.systemBlue)],
-//        [Setups(image: UIImage(systemName: "bell.badge.fill")!, name: "Уведомления", color: UIColor.systemRed)],
-//        [Setups(image: UIImage(systemName: "speaker.wave.3.fill")!, name: "Звуки, тактильные сигналы", color: UIColor.systemRed)],
-//        [Setups(image: UIImage(systemName: "moon.fill")!, name: "Не беспокоить", color: UIColor.systemIndigo)],
-//        [Setups(image: UIImage(systemName: "hourglass")!, name: "Экранное время", color: UIColor.systemIndigo)],
-//        [Setups(image: UIImage(systemName: "gear")!, name: "Основные", color: UIColor.systemGray)],
-//        [Setups(image: UIImage(systemName: "switch.2")!, name: "Пункты управления", color: UIColor.systemGray)],
-//        [Setups(image: UIImage(systemName: "textformat.size")!, name: "Экран и яркость", color: UIColor.systemBlue)],
-//        [Setups(image: UIImage(systemName: "wifi")!, name: "Экран <<Домой>>", color: UIColor.blue)],
-//        [Setups(image: UIImage(systemName: "moon.fill")!, name: "Универсальный доступ", color: UIColor.systemBlue)],
-//        [Setups(image: UIImage(systemName: "airplane")!, name: "Обои", color: UIColor.systemBlue)],
-//        [Setups(image: UIImage(systemName: "moon.fill")!, name: "Siri и Поиск", color: UIColor.black)],
-//        [Setups(image: UIImage(systemName: "faceid")!, name: "Face ID и код-пароль", color: UIColor.systemGreen)],
-//        [Setups(image: UIImage(systemName: "moon.fill")!, name: "Экстренный вызов - SOS", color: UIColor.systemRed)],
-//        [Setups(image: UIImage(systemName: "wifi")!, name: "Уведомление о контакте", color: UIColor.systemRed)],
-//        [Setups(image: UIImage(systemName: "battery.100")!, name: "Аккумулятор", color: UIColor.systemGreen)],
-//        [Setups(image: UIImage(systemName: "hand.raised.fill")!, name: "Конфиденциальность", color: UIColor.systemBlue)]
-//    ]
 

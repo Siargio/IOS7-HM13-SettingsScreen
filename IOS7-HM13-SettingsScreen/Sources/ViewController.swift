@@ -10,7 +10,6 @@ import SnapKit
 
 class ViewController: UIViewController {
 
-//     var setups: [[Setups]]?
     var data = SetupSections.setupSections
 
     // MARK: - Outlets
@@ -29,7 +28,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setups = Setups.setups
         title = "Настройки"
         setupHierarchy()
         setupLayout()
