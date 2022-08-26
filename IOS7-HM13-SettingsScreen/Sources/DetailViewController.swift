@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    var setups: Setups?
+//    var setups: Setups?
 
     override func viewDidLoad() {
         super.viewDidLoad()
