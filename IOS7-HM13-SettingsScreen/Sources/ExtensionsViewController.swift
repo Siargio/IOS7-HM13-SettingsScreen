@@ -9,30 +9,51 @@ import UIKit
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
+
     func numberOfSections(in tableView: UITableView) -> Int {
-        return setups?.count ?? 0
+        return data.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return setups?[section].count ?? 0
+        return data[section].setupsItem.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomViewController", for: indexPath) as? CustomViewController
-        cell?.setup = setups?[indexPath.section][indexPath.row]
-        cell?.accessoryType = .disclosureIndicator// справа значек
-        return cell ?? UITableViewCell()
+
+        let cellData = data[indexPath.section].setupsItem[indexPath.row]
+
+        switch data[indexPath.section].setupsItem[indexPath.row].cellType {
+        case .defaultCell:
+            return setupDefaultCell(tableView: tableView, text: cellData.name, indexPath: indexPath)
+        case .labelCell:
+            return setupLabelCell(tableView: tableView, text: cellData.name, indexPath: indexPath)
+        case .switchCell:
+            return setupSwitchCell(tableView: tableView, text: cellData.name, indexPath: indexPath)
+        }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = DetailViewController()
+        let detailViewController = DetailViewController()
+        self.navigationController?.pushViewController(detailViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
-        viewController.setups = setups?[indexPath.section][indexPath.row]
-        navigationController?.pushViewController(viewController, animated: true)
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let title = setups?[indexPath.section][indexPath.row].name
-//        print("Выбрана ячейка \(String(describing: title))")
-//        tableView.deselectRow(at: indexPath, animated: true)
-//    }
+
+    private func setupDefaultCell(tableView: UITableView, text: String, indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath) as? DefaultCell else { return UITableViewCell() }
+        cell.configureCell(text: text)
+        return cell
+    }
+
+    private func setupLabelCell(tableView: UITableView, text: String, indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as? LabelCell else { return UITableViewCell() }
+        cell.configureCell(text: text)
+        return cell
+    }
+
+    private func setupSwitchCell(tableView: UITableView, text: String, indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath) as? SwitchCell else { return UITableViewCell() }
+        cell.configureCell(text: text)
+        return cell
+    }
+    
 }
 

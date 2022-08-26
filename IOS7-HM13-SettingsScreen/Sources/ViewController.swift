@@ -10,13 +10,16 @@ import SnapKit
 
 class ViewController: UIViewController {
 
-     var setups: [[Setups]]?
- 
+//     var setups: [[Setups]]?
+    var data = SetupSections.setupSections
+
     // MARK: - Outlets
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(CustomViewController.self, forCellReuseIdentifier: "CustomViewController")
+        tableView.register(DefaultCell.self, forCellReuseIdentifier: "DefaultCell")
+        tableView.register(LabelCell.self, forCellReuseIdentifier: "LabelCell")
+        tableView.register(SwitchCell.self, forCellReuseIdentifier: "SwitchCell")
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
@@ -26,7 +29,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setups = Setups.setups
+//        setups = Setups.setups
         title = "Настройки"
         setupHierarchy()
         setupLayout()
