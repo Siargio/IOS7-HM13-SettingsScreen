@@ -9,10 +9,23 @@ import UIKit
 
 class SwitchCell: BaseCell {
 
-    private lazy var newImage: UIImageView = {
-        let image = UIImageView()
-        image.contentMode = .scaleAspectFill
-        return image
+//    private lazy var image: UIImageView = {
+//        let image = UIImageView()
+//        image.contentMode = .scaleToFill
+//        image.backgroundColor = .blue
+//        return image
+//    } ()
+//
+//    private lazy var newImage: UIImageView = {
+//        let image = UIImageView()
+//        image.contentMode = .scaleAspectFill
+//        return image
+//    } ()
+
+    private lazy var componentSwitch: UISwitch = {
+        let componentSwitch = UISwitch()
+        componentSwitch.onTintColor = .systemGreen
+        return componentSwitch
     } ()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -25,23 +38,28 @@ class SwitchCell: BaseCell {
     }
 
     func setupView() {
-        self.addSubview(newImage)
+        self.addSubview(componentSwitch)
+        //self.addSubview(image)
 
-
-        newImage.translatesAutoresizingMaskIntoConstraints = false
-
+        componentSwitch.translatesAutoresizingMaskIntoConstraints = false
+        //image.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            newImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            newImage.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            newImage.widthAnchor.constraint(equalToConstant: 21),
-            newImage.heightAnchor.constraint(equalToConstant: 22),
+            componentSwitch.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -45),
+            componentSwitch.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -5),
+            componentSwitch.widthAnchor.constraint(equalToConstant: 21),
+            componentSwitch.heightAnchor.constraint(equalToConstant: 22),
+
+//            image.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+//            image.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+//            image.widthAnchor.constraint(equalToConstant: 21),
+//            image.heightAnchor.constraint(equalToConstant: 22),
 
         ])
     }
 
-    func configureCell(text: String) {
-        newImage.image = UIImage(systemName: "play.fill")
-        configureBaseCell(text: text)
+    func configureCell(text: String, color: UIColor, imageImage: UIImage) {
+        configureBaseCell(text: text, color: color, imageImage: imageImage)
+
     }
 }
