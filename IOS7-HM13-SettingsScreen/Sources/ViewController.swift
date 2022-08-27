@@ -11,7 +11,6 @@ import SnapKit
 class ViewController: UIViewController {
 
     var data = SetupSections.setupSections
-    public let picture = UIImage(systemName: "1.circle.fill")
     
     // MARK: - Outlets
 
