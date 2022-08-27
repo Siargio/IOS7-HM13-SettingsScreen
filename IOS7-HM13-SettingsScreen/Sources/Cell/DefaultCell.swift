@@ -52,8 +52,7 @@ class DefaultCell: BaseCell {
     }
     
     func configureCell(text: String, color: UIColor, imageImage: UIImage) {
-//        label.text = text
-//        image.backgroundColor = color
+
         configureBaseCell(text: text, color: color, imageImage: imageImage)
        
         
