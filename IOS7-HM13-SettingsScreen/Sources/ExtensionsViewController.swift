@@ -23,13 +23,24 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
         switch data[indexPath.section].setupsItem[indexPath.row].cellType {
         case .defaultCell:
-            return setupDefaultCell(tableView: tableView, text: cellData.name, color: cellData.color, imageImage: cellData.image, indexPath: indexPath)
+            return setupDefaultCell(tableView: tableView,
+                                    text: cellData.name,
+                                    color: cellData.color,
+                                    imageImage: cellData.image,
+                                    indexPath: indexPath)
         case .labelCell:
-            return setupLabelCell(tableView: tableView, text: cellData.name, color: cellData.color, imageImage: cellData.image, indexPath: indexPath)
+            return setupLabelCell(tableView: tableView,
+                                  text: cellData.name,
+                                  color: cellData.color,
+                                  imageImage: cellData.image,
+                                  labelRight: cellData.labelRight ?? "",
+                                  indexPath: indexPath)
         case .switchCell:
-            return setupSwitchCell(tableView: tableView, text: cellData.name, color: cellData.color, imageImage: cellData.image, indexPath: indexPath)
-//        case .baseCell:
-//            return setupBaseCell(tableView: tableView, text: cellData.name, indexPath: indexPath)
+            return setupSwitchCell(tableView: tableView,
+                                   text: cellData.name,
+                                   color: cellData.color,
+                                   imageImage: cellData.image,
+                                   indexPath: indexPath)
         }
     }
 
@@ -42,13 +53,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     private func setupDefaultCell(tableView: UITableView, text: String, color: UIColor, imageImage: UIImage, indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath) as? DefaultCell else { return UITableViewCell() }
         cell.configureCell(text: text, color: color, imageImage: imageImage)
-        cell.accessoryType = .disclosureIndicator //добавил справа скобочку
+        cell.accessoryType = .disclosureIndicator //добавил справа скобку
         return cell
     }
 
-    private func setupLabelCell(tableView: UITableView, text: String, color: UIColor, imageImage: UIImage, indexPath: IndexPath) -> UITableViewCell {
+    private func setupLabelCell(tableView: UITableView, text: String, color: UIColor, imageImage: UIImage, labelRight: String, indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as? LabelCell else { return UITableViewCell() }
-        cell.configureCell(text: text, color: color, imageImage: imageImage)
+        cell.configureCell(text: text, color: color, imageImage: imageImage, labelRight: labelRight)
         cell.accessoryType = .disclosureIndicator
         return cell
     }

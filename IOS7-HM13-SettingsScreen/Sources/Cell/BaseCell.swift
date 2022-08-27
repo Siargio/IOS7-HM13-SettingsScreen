@@ -37,12 +37,10 @@ class BaseCell: UITableViewCell {
         super.init(coder: coder)
     }
     
-    
     private func setupView() {
         self.addSubview(image)
         self.addSubview(label)
         self.addSubview(imageIm)
-
 
         image.snp.makeConstraints {
             $0.centerY.equalTo(contentView)
@@ -58,33 +56,6 @@ class BaseCell: UITableViewCell {
         imageIm.snp.makeConstraints {
             $0.centerY.centerX.equalTo(image)
         }
-
-
-
-
-
-//        image.translatesAutoresizingMaskIntoConstraints = false
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        imageIm.translatesAutoresizingMaskIntoConstraints = false
-//
-//        NSLayoutConstraint.activate([
-//
-//            image.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-//            image.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-//            image.widthAnchor.constraint(equalToConstant: 30),
-//            image.heightAnchor.constraint(equalToConstant: 30),
-//
-//            label.leadingAnchor.constraint(equalTo: image.leadingAnchor, constant: 40),
-//            label.centerYAnchor.constraint(equalTo: image.centerYAnchor),
-//            label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-//            //label.heightAnchor.constraint(equalToConstant: 50)
-//
-//            imageIm.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-//            imageIm.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-//            imageIm.centerXAnchor.constraint(equalTo: image.centerXAnchor),
-//            imageIm.widthAnchor.constraint(equalToConstant: 21),
-//            imageIm.heightAnchor.constraint(equalToConstant: 22),
-//        ])
     }
     
     func configureBaseCell(text: String, color: UIColor, imageImage: UIImage) {

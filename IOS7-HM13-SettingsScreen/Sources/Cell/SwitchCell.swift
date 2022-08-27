@@ -9,22 +9,10 @@ import UIKit
 
 class SwitchCell: BaseCell {
 
-//    private lazy var image: UIImageView = {
-//        let image = UIImageView()
-//        image.contentMode = .scaleToFill
-//        image.backgroundColor = .blue
-//        return image
-//    } ()
-//
-//    private lazy var newImage: UIImageView = {
-//        let image = UIImageView()
-//        image.contentMode = .scaleAspectFill
-//        return image
-//    } ()
-
     private lazy var componentSwitch: UISwitch = {
         let componentSwitch = UISwitch()
         componentSwitch.onTintColor = .systemGreen
+        componentSwitch.addTarget(self, action: #selector(switchPressed), for: .touchUpInside)
         return componentSwitch
     } ()
 
@@ -39,10 +27,8 @@ class SwitchCell: BaseCell {
 
     func setupView() {
         self.addSubview(componentSwitch)
-        //self.addSubview(image)
 
         componentSwitch.translatesAutoresizingMaskIntoConstraints = false
-        //image.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             componentSwitch.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -45),
@@ -50,16 +36,19 @@ class SwitchCell: BaseCell {
             componentSwitch.widthAnchor.constraint(equalToConstant: 21),
             componentSwitch.heightAnchor.constraint(equalToConstant: 22),
 
-//            image.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-//            image.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-//            image.widthAnchor.constraint(equalToConstant: 21),
-//            image.heightAnchor.constraint(equalToConstant: 22),
-
         ])
     }
 
     func configureCell(text: String, color: UIColor, imageImage: UIImage) {
-        configureBaseCell(text: text, color: color, imageImage: imageImage)
 
+        configureBaseCell(text: text, color: color, imageImage: imageImage)
+    }
+
+    @objc func switchPressed(_ sender: UISwitch) {
+        if sender.isOn {
+            print("Turn ON")
+        } else {
+            print("Turn OFF")
+        }
     }
 }
