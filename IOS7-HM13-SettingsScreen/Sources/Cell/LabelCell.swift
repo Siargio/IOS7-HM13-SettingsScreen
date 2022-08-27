@@ -57,10 +57,6 @@ class LabelCell: BaseCell {
     }
     
     func configureCell(text: String, color: UIColor, imageImage: UIImage, labelRight: String?, imageRight: UIImage?) {
-//        if let label = labelRight {
-//            label.text = labelRight
-//            imageImage = nil
-//        }
         label.text = labelRight
         imageR.image = imageRight
         configureBaseCell(text: text, color: color, imageImage: imageImage)

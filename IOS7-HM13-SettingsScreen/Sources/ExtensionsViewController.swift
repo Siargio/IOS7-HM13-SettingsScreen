@@ -71,11 +71,4 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.configureCell(text: text, color: color, imageImage: imageImage)
         return cell
     }
-
-//    private func setupBaseCell(tableView: UITableView, text: String, indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BaseCell", for: indexPath) as? BaseCell else { return UITableViewCell() }
-//        cell.configureCell(text: text)
-//        return cell
-//    }
-    
 }
