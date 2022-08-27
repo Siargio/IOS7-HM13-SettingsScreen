@@ -10,21 +10,20 @@ import SnapKit
 
 class LabelCell: BaseCell {
     
-    // MARK: - Outlets
+    // MARK: - Elements
 
     private lazy var label: UILabel = {
         let labelRight = UILabel()
         labelRight.textColor = .lightGray
         return labelRight
-    } ()
+    }()
 
     private lazy var imageR: UIImageView = {
         let image = UIImage()
-        //let image = UIImage(systemName: "1.circle.fill")
         let imageR = UIImageView(image: image)
         imageR.tintColor = .systemRed
         return imageR
-    } ()
+    }()
     
     // MARK: - Lifecycle
 

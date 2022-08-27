@@ -9,26 +9,32 @@ import UIKit
 
 class BaseCell: UITableViewCell {
     
-    // MARK: - Outlets
+    // MARK: - Elements
 
     private lazy var image: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleToFill
         image.layer.cornerRadius = 8
         return image
-    } ()
+    }()
     
     private lazy var label: UILabel = {
         let label = UILabel()
         label.textColor = .black
         return label
-    } ()
+    }()
 
     private lazy var imageIm: UIImageView = {
         let imageIm = UIImageView()
         imageIm.tintColor = .white
         return imageIm
-    } ()
+    }()
+
+    private lazy var separatorView: UIView = {
+            let separatorView = UIView()
+            separatorView.backgroundColor = .lightGray
+            return separatorView
+        }()
     
     // MARK: - Lifecycle
 
@@ -47,6 +53,7 @@ class BaseCell: UITableViewCell {
         self.addSubview(image)
         self.addSubview(label)
         self.addSubview(imageIm)
+        self.addSubview(separatorView)
 
         image.snp.makeConstraints {
             $0.centerY.equalTo(contentView)
@@ -61,6 +68,12 @@ class BaseCell: UITableViewCell {
 
         imageIm.snp.makeConstraints {
             $0.centerY.centerX.equalTo(image)
+        }
+
+        separatorView.snp.makeConstraints {
+            $0.trailing.bottom.equalToSuperview()
+            $0.leading.equalTo(label)
+            $0.height.equalTo(0.5)
         }
     }
     
