@@ -8,27 +8,29 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     var data = SetupSections.setupSections
     
-    // MARK: - Outlets
+    // MARK: - Elements
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(DefaultCell.self, forCellReuseIdentifier: "DefaultCell")
+        tableView.separatorStyle = .none
+        tableView.register(BaseCell.self, forCellReuseIdentifier: "BaseCell")
         tableView.register(LabelCell.self, forCellReuseIdentifier: "LabelCell")
         tableView.register(SwitchCell.self, forCellReuseIdentifier: "SwitchCell")
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
-    } ()
+    }()
 
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Настройки"
+        navigationController?.navigationBar.prefersLargeTitles = true //лейбел
         setupHierarchy()
         setupLayout()
     }
@@ -45,4 +47,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

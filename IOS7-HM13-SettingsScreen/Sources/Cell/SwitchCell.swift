@@ -9,14 +9,14 @@ import UIKit
 
 class SwitchCell: BaseCell {
     
-    // MARK: - Outlets
+    // MARK: - Elements
 
     private lazy var componentSwitch: UISwitch = {
         let componentSwitch = UISwitch()
         componentSwitch.onTintColor = .systemGreen
         componentSwitch.addTarget(self, action: #selector(switchPressed), for: .touchUpInside)
         return componentSwitch
-    } ()
+    }()
 
     // MARK: - Lifecycle
     
@@ -35,7 +35,7 @@ class SwitchCell: BaseCell {
         componentSwitch.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            componentSwitch.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -45),
+            componentSwitch.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50),
             componentSwitch.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -5),
             componentSwitch.widthAnchor.constraint(equalToConstant: 21),
             componentSwitch.heightAnchor.constraint(equalToConstant: 22),

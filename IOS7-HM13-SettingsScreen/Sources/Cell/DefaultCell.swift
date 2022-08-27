@@ -9,7 +9,7 @@ import UIKit
 
 class DefaultCell: BaseCell {
     
-    // MARK: - Outlets
+    // MARK: - Elements
     
     // MARK: - Lifecycle
 

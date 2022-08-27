@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		EC26C51328B77B6600ED947C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C51228B77B6600ED947C /* AppDelegate.swift */; };
 		EC26C51528B77B6600ED947C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C51428B77B6600ED947C /* SceneDelegate.swift */; };
-		EC26C51728B77B6600ED947C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C51628B77B6600ED947C /* ViewController.swift */; };
+		EC26C51728B77B6600ED947C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C51628B77B6600ED947C /* SettingsViewController.swift */; };
 		EC26C51C28B77B6700ED947C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC26C51B28B77B6700ED947C /* Assets.xcassets */; };
 		EC26C51F28B77B6700ED947C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC26C51D28B77B6700ED947C /* LaunchScreen.storyboard */; };
 		EC26C52828B77CF200ED947C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC26C52728B77CF200ED947C /* SnapKit */; };
 		EC26C52B28B77D0800ED947C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC26C52A28B77D0800ED947C /* SnapKit */; };
-		EC26C53228B78D8000ED947C /* ExtensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */; };
+		EC26C53228B78D8000ED947C /* ExtensionsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53128B78D8000ED947C /* ExtensionsSettingsViewController.swift */; };
 		EC26C53528B7B4D600ED947C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53428B7B4D600ED947C /* Model.swift */; };
-		EC26C53B28B82A7000ED947C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53A28B82A7000ED947C /* DetailViewController.swift */; };
-		ECBECE6628B90B8B00CB6070 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBECE6528B90B8B00CB6070 /* DefaultCell.swift */; };
+		EC26C53B28B82A7000ED947C /* DetailSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53A28B82A7000ED947C /* DetailSettingsViewController.swift */; };
 		ECBECE6828B90B9600CB6070 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBECE6728B90B9600CB6070 /* LabelCell.swift */; };
 		ECBECE6A28B90BAB00CB6070 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBECE6928B90BAB00CB6070 /* SwitchCell.swift */; };
 		ECBECE6C28B90BB900CB6070 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBECE6B28B90BB900CB6070 /* BaseCell.swift */; };
@@ -27,14 +26,13 @@
 		EC26C50F28B77B6600ED947C /* IOS7-HM13-SettingsScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS7-HM13-SettingsScreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC26C51228B77B6600ED947C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC26C51428B77B6600ED947C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC26C51628B77B6600ED947C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC26C51628B77B6600ED947C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EC26C51B28B77B6700ED947C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC26C51E28B77B6700ED947C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC26C52028B77B6700ED947C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsViewController.swift; sourceTree = "<group>"; };
+		EC26C53128B78D8000ED947C /* ExtensionsSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsSettingsViewController.swift; sourceTree = "<group>"; };
 		EC26C53428B7B4D600ED947C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		EC26C53A28B82A7000ED947C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		ECBECE6528B90B8B00CB6070 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
+		EC26C53A28B82A7000ED947C /* DetailSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingsViewController.swift; sourceTree = "<group>"; };
 		ECBECE6728B90B9600CB6070 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		ECBECE6928B90BAB00CB6070 /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		ECBECE6B28B90BB900CB6070 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
@@ -90,12 +88,11 @@
 		EC26C52D28B77D2900ED947C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				ECC79C0A28BA95B900E4FD40 /* Setings */,
+				ECC79C0928BA95B100E4FD40 /* DetailSetings */,
 				EC26C53328B7AAD300ED947C /* Model */,
 				ECBECE6428B90B4600CB6070 /* Cell */,
 				EC26C52E28B77D2B00ED947C /* Storyboards */,
-				EC26C51628B77B6600ED947C /* ViewController.swift */,
-				EC26C53A28B82A7000ED947C /* DetailViewController.swift */,
-				EC26C53128B78D8000ED947C /* ExtensionsViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -111,7 +108,6 @@
 		EC26C52F28B77D2D00ED947C /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				EC26C51B28B77B6700ED947C /* Assets.xcassets */,
 				EC26C52028B77B6700ED947C /* Info.plist */,
 			);
 			path = Configuration;
@@ -120,6 +116,7 @@
 		EC26C53028B77D3000ED947C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC26C51B28B77B6700ED947C /* Assets.xcassets */,
 				EC26C52C28B77D2700ED947C /* App */,
 				EC26C52F28B77D2D00ED947C /* Configuration */,
 			);
@@ -137,12 +134,28 @@
 		ECBECE6428B90B4600CB6070 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				ECBECE6528B90B8B00CB6070 /* DefaultCell.swift */,
 				ECBECE6728B90B9600CB6070 /* LabelCell.swift */,
 				ECBECE6928B90BAB00CB6070 /* SwitchCell.swift */,
 				ECBECE6B28B90BB900CB6070 /* BaseCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		ECC79C0928BA95B100E4FD40 /* DetailSetings */ = {
+			isa = PBXGroup;
+			children = (
+				EC26C53A28B82A7000ED947C /* DetailSettingsViewController.swift */,
+			);
+			path = DetailSetings;
+			sourceTree = "<group>";
+		};
+		ECC79C0A28BA95B900E4FD40 /* Setings */ = {
+			isa = PBXGroup;
+			children = (
+				EC26C51628B77B6600ED947C /* SettingsViewController.swift */,
+				EC26C53128B78D8000ED947C /* ExtensionsSettingsViewController.swift */,
+			);
+			path = Setings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,14 +237,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC26C53528B7B4D600ED947C /* Model.swift in Sources */,
-				ECBECE6628B90B8B00CB6070 /* DefaultCell.swift in Sources */,
-				EC26C53228B78D8000ED947C /* ExtensionsViewController.swift in Sources */,
-				EC26C51728B77B6600ED947C /* ViewController.swift in Sources */,
+				EC26C53228B78D8000ED947C /* ExtensionsSettingsViewController.swift in Sources */,
+				EC26C51728B77B6600ED947C /* SettingsViewController.swift in Sources */,
 				EC26C51328B77B6600ED947C /* AppDelegate.swift in Sources */,
 				EC26C51528B77B6600ED947C /* SceneDelegate.swift in Sources */,
 				ECBECE6C28B90BB900CB6070 /* BaseCell.swift in Sources */,
 				ECBECE6828B90B9600CB6070 /* LabelCell.swift in Sources */,
-				EC26C53B28B82A7000ED947C /* DetailViewController.swift in Sources */,
+				EC26C53B28B82A7000ED947C /* DetailSettingsViewController.swift in Sources */,
 				ECBECE6A28B90BAB00CB6070 /* SwitchCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

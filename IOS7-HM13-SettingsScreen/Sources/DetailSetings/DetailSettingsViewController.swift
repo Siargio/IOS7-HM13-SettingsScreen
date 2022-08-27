@@ -9,15 +9,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    // MARK: - Outlets
+    // MARK: - Elements
     
     private lazy var label: UILabel = {
         label = UILabel()
-        label.text = "КРЯ"
-        label.font = .systemFont(ofSize: 70)
+        label.text = "ПУСТО"
+        label.font = .systemFont(ofSize: 50)
         label.textColor = .red
         return label
-    } ()
+    }()
 
     // MARK: - Lifecycle
 
