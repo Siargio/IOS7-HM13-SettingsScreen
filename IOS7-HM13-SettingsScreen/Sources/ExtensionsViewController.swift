@@ -10,6 +10,7 @@ import UIKit
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
 
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
     }
@@ -34,6 +35,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
                                   color: cellData.color,
                                   imageImage: cellData.image,
                                   labelRight: cellData.labelRight ?? "",
+                                  imageRight: (cellData.imageRight ?? UIImage(named: "defaultImage"))!,
                                   indexPath: indexPath)
         case .switchCell:
             return setupSwitchCell(tableView: tableView,
@@ -57,9 +59,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 
-    private func setupLabelCell(tableView: UITableView, text: String, color: UIColor, imageImage: UIImage, labelRight: String, indexPath: IndexPath) -> UITableViewCell {
+    private func setupLabelCell(tableView: UITableView, text: String, color: UIColor, imageImage: UIImage, labelRight: String, imageRight: UIImage, indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as? LabelCell else { return UITableViewCell() }
-        cell.configureCell(text: text, color: color, imageImage: imageImage, labelRight: labelRight)
+        cell.configureCell(text: text, color: color, imageImage: imageImage, labelRight: labelRight, imageRight: imageRight)
         cell.accessoryType = .disclosureIndicator
         return cell
     }
@@ -77,4 +79,3 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 //    }
     
 }
-

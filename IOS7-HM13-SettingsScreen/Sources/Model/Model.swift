@@ -23,6 +23,7 @@ struct Setups {
     var name: String
     var color: UIColor
     var labelRight: String?
+    var imageRight: UIImage? //= UIImage(systemName: "1.circle.fill")
     var cellType: CellType
 }
 
@@ -43,7 +44,7 @@ extension SetupSections {
         Setups(image: UIImage(systemName: "hourglass")!, name: "Экранное время", color: .systemIndigo, cellType: .defaultCell)]),
 
         SetupSections(sectionsNumber: 2, setupsItem: [
-        Setups(image: UIImage(systemName: "gear")!, name: "Основные", color: .systemGray, cellType: .labelCell),
+        Setups(image: UIImage(systemName: "gear")!, name: "Основные", color: .systemGray, imageRight: UIImage(systemName: "1.circle.fill"), cellType: .labelCell),
         Setups(image: UIImage(systemName: "switch.2")!, name: "Пункты управления", color: .systemGray, cellType: .defaultCell),
         Setups(image: UIImage(systemName: "textformat.size")!, name: "Экран и яркость", color: .systemBlue, cellType: .defaultCell),
         Setups(image: UIImage(systemName: "wifi")!, name: "Экран «Домой»", color: .systemBlue, cellType: .defaultCell),

@@ -9,6 +9,8 @@ import UIKit
 
 class BaseCell: UITableViewCell {
     
+    // MARK: - Outlets
+
     private lazy var image: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleToFill
@@ -27,6 +29,8 @@ class BaseCell: UITableViewCell {
         imageIm.tintColor = .white
         return imageIm
     } ()
+    
+    // MARK: - Lifecycle
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -36,6 +40,8 @@ class BaseCell: UITableViewCell {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+
+    // MARK: - Setup
     
     private func setupView() {
         self.addSubview(image)

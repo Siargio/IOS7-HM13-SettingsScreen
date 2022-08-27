@@ -9,6 +9,8 @@ import UIKit
 
 class DefaultCell: BaseCell {
     
+    // MARK: - Outlets
+
 //    private lazy var image: UIImageView = {
 //        let image = UIImageView()
 //        image.contentMode = .scaleToFill
@@ -21,6 +23,8 @@ class DefaultCell: BaseCell {
 //        return label
 //    } ()
     
+    // MARK: - Lifecycle
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
@@ -30,25 +34,27 @@ class DefaultCell: BaseCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Setup
+
     func setupView() {
-//        self.addSubview(image)
-//        self.addSubview(label)
-        
-//        image.translatesAutoresizingMaskIntoConstraints = false
-//        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            
-//            image.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-//            image.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-//            image.widthAnchor.constraint(equalToConstant: 21),
-//            image.heightAnchor.constraint(equalToConstant: 22),
+////        self.addSubview(image)
+////        self.addSubview(label)
 //
-//            label.leadingAnchor.constraint(equalTo: image.leadingAnchor, constant: 40),
-//            label.centerYAnchor.constraint(equalTo: image.centerYAnchor),
-//            label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -80),
-//            label.heightAnchor.constraint(equalToConstant: 50)
-        ])
+////        image.translatesAutoresizingMaskIntoConstraints = false
+////        label.translatesAutoresizingMaskIntoConstraints = false
+//
+//        NSLayoutConstraint.activate([
+//
+////            image.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+////            image.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+////            image.widthAnchor.constraint(equalToConstant: 21),
+////            image.heightAnchor.constraint(equalToConstant: 22),
+////
+////            label.leadingAnchor.constraint(equalTo: image.leadingAnchor, constant: 40),
+////            label.centerYAnchor.constraint(equalTo: image.centerYAnchor),
+////            label.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -80),
+////            label.heightAnchor.constraint(equalToConstant: 50)
+//        ])
     }
     
     func configureCell(text: String, color: UIColor, imageImage: UIImage) {
