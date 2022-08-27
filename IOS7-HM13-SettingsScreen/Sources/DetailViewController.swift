@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     
     private lazy var label: UILabel = {
         label = UILabel()
-        label.text = "ЛОХ"
+        label.text = "КРЯ"
         label.font = .systemFont(ofSize: 70)
         label.textColor = .red
         return label
@@ -27,7 +27,6 @@ class DetailViewController: UIViewController {
         title = "Sorry :("
         setupHierarchy()
         setupLayout()
-
     }
 
     // MARK: - Setup

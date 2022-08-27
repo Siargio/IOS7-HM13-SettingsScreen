@@ -8,6 +8,8 @@
 import UIKit
 
 class SwitchCell: BaseCell {
+    
+    // MARK: - Outlets
 
     private lazy var componentSwitch: UISwitch = {
         let componentSwitch = UISwitch()
@@ -16,6 +18,8 @@ class SwitchCell: BaseCell {
         return componentSwitch
     } ()
 
+    // MARK: - Lifecycle
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
@@ -39,8 +43,9 @@ class SwitchCell: BaseCell {
         ])
     }
 
-    func configureCell(text: String, color: UIColor, imageImage: UIImage) {
+    // MARK: - Setup
 
+    func configureCell(text: String, color: UIColor, imageImage: UIImage) {
         configureBaseCell(text: text, color: color, imageImage: imageImage)
     }
 
