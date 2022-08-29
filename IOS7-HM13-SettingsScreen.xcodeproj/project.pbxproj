@@ -17,6 +17,7 @@
 		EC26C53228B78D8000ED947C /* ExtensionsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53128B78D8000ED947C /* ExtensionsSettingsViewController.swift */; };
 		EC26C53528B7B4D600ED947C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53428B7B4D600ED947C /* Model.swift */; };
 		EC26C53B28B82A7000ED947C /* DetailSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26C53A28B82A7000ED947C /* DetailSettingsViewController.swift */; };
+		EC6DD30B28BCF06700599578 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD30A28BCF06700599578 /* SearchCell.swift */; };
 		ECBECE6828B90B9600CB6070 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBECE6728B90B9600CB6070 /* LabelCell.swift */; };
 		ECBECE6A28B90BAB00CB6070 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBECE6928B90BAB00CB6070 /* SwitchCell.swift */; };
 		ECBECE6C28B90BB900CB6070 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBECE6B28B90BB900CB6070 /* BaseCell.swift */; };
@@ -33,6 +34,7 @@
 		EC26C53128B78D8000ED947C /* ExtensionsSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsSettingsViewController.swift; sourceTree = "<group>"; };
 		EC26C53428B7B4D600ED947C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EC26C53A28B82A7000ED947C /* DetailSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingsViewController.swift; sourceTree = "<group>"; };
+		EC6DD30A28BCF06700599578 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		ECBECE6728B90B9600CB6070 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		ECBECE6928B90BAB00CB6070 /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		ECBECE6B28B90BB900CB6070 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				ECBECE6728B90B9600CB6070 /* LabelCell.swift */,
 				ECBECE6928B90BAB00CB6070 /* SwitchCell.swift */,
 				ECBECE6B28B90BB900CB6070 /* BaseCell.swift */,
+				EC6DD30A28BCF06700599578 /* SearchCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC26C53528B7B4D600ED947C /* Model.swift in Sources */,
+				EC6DD30B28BCF06700599578 /* SearchCell.swift in Sources */,
 				EC26C53228B78D8000ED947C /* ExtensionsSettingsViewController.swift in Sources */,
 				EC26C51728B77B6600ED947C /* SettingsViewController.swift in Sources */,
 				EC26C51328B77B6600ED947C /* AppDelegate.swift in Sources */,
