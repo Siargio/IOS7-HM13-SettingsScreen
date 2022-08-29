@@ -20,9 +20,9 @@ class SettingsViewController: UIViewController {
         tableView.register(BaseCell.self, forCellReuseIdentifier: "BaseCell")
         tableView.register(LabelCell.self, forCellReuseIdentifier: "LabelCell")
         tableView.register(SwitchCell.self, forCellReuseIdentifier: "SwitchCell")
+        tableView.register(SearchCell.self, forCellReuseIdentifier: "SearchCell")
         tableView.dataSource = self
         tableView.delegate = self
-        //tableView.tintColor = .black
         return tableView
     }()
 

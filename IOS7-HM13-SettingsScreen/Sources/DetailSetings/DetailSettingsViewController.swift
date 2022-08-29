@@ -16,7 +16,6 @@ class DetailViewController: UIViewController {
         label.text = "ПУСТО"
         label.font = .systemFont(ofSize: 62)
         label.textColor = .black
-        label.backgroundColor = .red
         return label
     }()
 

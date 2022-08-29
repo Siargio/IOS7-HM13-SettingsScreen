@@ -31,10 +31,10 @@ class BaseCell: UITableViewCell {
     }()
 
     private lazy var separatorView: UIView = {
-            let separatorView = UIView()
-            separatorView.backgroundColor = .lightGray
-            return separatorView
-        }()
+        let separatorView = UIView()
+        separatorView.backgroundColor = .lightGray
+        return separatorView
+    }()
     
     // MARK: - Lifecycle
 

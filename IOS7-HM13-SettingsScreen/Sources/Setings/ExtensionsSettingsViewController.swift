@@ -24,29 +24,32 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         switch data[indexPath.section].setupsItem[indexPath.row].cellType {
         case .baseCell:
             return setupDefaultCell(tableView: tableView,
-                                    text: cellData.name,
-                                    color: cellData.color,
-                                    imageImage: cellData.image,
+                                    text: cellData.name ?? "",
+                                    color: cellData.color ?? UIColor.systemGray3,
+                                    imageImage: cellData.image!,
                                     indexPath: indexPath)
         case .labelCell:
             return setupLabelCell(tableView: tableView,
-                                  text: cellData.name,
-                                  color: cellData.color,
-                                  imageImage: cellData.image,
+                                  text: cellData.name ?? "",
+                                  color: cellData.color ?? UIColor.systemGray3,
+                                  imageImage: cellData.image!,
                                   labelRight: cellData.labelRight ?? "",
                                   imageRight: (cellData.imageRight ?? UIImage(named: "defaultImage"))!,
                                   indexPath: indexPath)
         case .switchCell:
             return setupSwitchCell(tableView: tableView,
-                                   text: cellData.name,
-                                   color: cellData.color,
-                                   imageImage: cellData.image,
+                                   text: cellData.name ?? "",
+                                   color: cellData.color ?? UIColor.systemGray3,
+                                   imageImage: cellData.image!,
+                                   indexPath: indexPath)
+        case .searchCell:
+            return setupSearchCell(tableView: tableView,
                                    indexPath: indexPath)
         }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if data[indexPath.section].setupsItem[indexPath.row].cellType != .switchCell { // условия для выбора где клацать по ячейке
+        if data[indexPath.section].setupsItem[indexPath.row].cellType != .switchCell { // условия для нажатия по ячейке
         let detailViewController = DetailViewController()
         self.navigationController?.pushViewController(detailViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
@@ -85,6 +88,12 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath) as? SwitchCell else { return UITableViewCell() }
         cell.configureCell(text: text, color: color, imageImage: imageImage)
         cell.selectionStyle = .none //стиль выбора ячейки чтобы не клацалась
+        return cell
+    }
+    
+    private func setupSearchCell(tableView: UITableView,
+                                 indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as? SearchCell else { return UITableViewCell() }
         return cell
     }
 }
