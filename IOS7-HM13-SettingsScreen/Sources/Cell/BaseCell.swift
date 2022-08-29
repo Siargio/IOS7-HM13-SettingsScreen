@@ -68,6 +68,7 @@ class BaseCell: UITableViewCell {
 
         imageIm.snp.makeConstraints {
             $0.centerY.centerX.equalTo(image)
+            $0.size.equalTo(image).inset(4) // меняет размер картинки
         }
 
         separatorView.snp.makeConstraints {

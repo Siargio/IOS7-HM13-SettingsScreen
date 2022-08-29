@@ -14,8 +14,9 @@ class DetailViewController: UIViewController {
     private lazy var label: UILabel = {
         label = UILabel()
         label.text = "ПУСТО"
-        label.font = .systemFont(ofSize: 50)
-        label.textColor = .red
+        label.font = .systemFont(ofSize: 62)
+        label.textColor = .black
+        label.backgroundColor = .red
         return label
     }()
 
@@ -37,9 +38,10 @@ class DetailViewController: UIViewController {
 
     private func setupLayout() {
         label.snp.makeConstraints {
-            $0.centerX.equalTo(view)
+            $0.centerY.equalTo(view)
             $0.leading.equalTo(110)
-            $0.width.height.equalTo(1100)
+            $0.width.equalTo(200)
+            $0.height.equalTo(110)
         }
     }
 }

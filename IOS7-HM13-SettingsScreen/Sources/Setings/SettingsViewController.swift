@@ -15,13 +15,14 @@ class SettingsViewController: UIViewController {
     // MARK: - Elements
 
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .grouped)
+        let tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.separatorStyle = .none
         tableView.register(BaseCell.self, forCellReuseIdentifier: "BaseCell")
         tableView.register(LabelCell.self, forCellReuseIdentifier: "LabelCell")
         tableView.register(SwitchCell.self, forCellReuseIdentifier: "SwitchCell")
         tableView.dataSource = self
         tableView.delegate = self
+        //tableView.tintColor = .black
         return tableView
     }()
 
@@ -30,6 +31,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Настройки"
+        //navigationController?.navigationBar.tintColor = .black // меняет цвет слева сверху
         navigationController?.navigationBar.prefersLargeTitles = true //лейбел
         setupHierarchy()
         setupLayout()
