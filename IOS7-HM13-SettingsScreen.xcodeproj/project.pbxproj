@@ -130,6 +130,7 @@
 			children = (
 				ECB5CB4228CCE7CC0015921B /* TableView.swift */,
 				ECBC1A6528CF1CF1000DC39F /* DetailView.swift */,
+				ECBECE6428B90B4600CB6070 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				ECB5CB3F28CCDEC90015921B /* Model */,
-				ECBECE6428B90B4600CB6070 /* Cell */,
 				ECB5CB4028CCDF000015921B /* View */,
 			);
 			path = Scene;
