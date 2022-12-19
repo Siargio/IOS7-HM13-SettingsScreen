@@ -1,5 +1,8 @@
 # SettingsScreen
-#Technology stack
+
+- Implemented settings screen
+
+# Technology stack
 
 - UIKit
 - MVС
