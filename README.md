@@ -1,4 +1,4 @@
-# SettingsScreen MVC
+# SettingsScreen
 #Technology stack
 
 - UIKit
