@@ -1,4 +1,4 @@
-# IOS7-HM13-SettingsScreen MVC
+# SettingsScreen MVC
 #Technology stack
 
 - UIKit
